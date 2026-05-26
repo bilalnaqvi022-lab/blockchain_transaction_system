@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Blockchain Dashboard</title>
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <header>
+
+        <h1>Blockchain TPS Dashboard</h1>
+
+        <div class="status">
+            LIVE NETWORK
+        </div>
+
+    </header>
+
+    <div class="dashboard">
+
+        <!-- Wallets -->
+        <div class="card">
+
+            <h2>Wallet Balances</h2>
+
+            <div id="wallets"></div>
+
+        </div>
+
+        <!-- Transaction -->
+        <div class="card">
+
+            <h2>Create Transaction</h2>
+
+            <select id="sender"></select>
+
+            <select id="receiver"></select>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Transaction Amount"
+            >
+
+            <button onclick="sendTransaction()">
+                Send Transaction
+            </button>
+
+            <button onclick="mineBlock()">
+                Mine Block
+            </button>
+
+            <div class="mining-box">
+
+                <div id="mining-status">
+                    Idle
+                </div>
+
+                <div class="spinner"></div>
+
+            </div>
+
+        </div>
+
+        <!-- TPS -->
+        <div class="card chart-card">
+
+            <h2>TPS Performance</h2>
+
+            <canvas id="tpsChart"></canvas>
+
+            <div class="tps-live">
+
+                Current TPS:
+                <span id="current-tps">0</span>
+
+            </div>
+
+        </div>
+
+        <!-- Logs -->
+        <div class="card">
+
+            <h2>Network Logs</h2>
+
+            <div id="logs"></div>
+
+        </div>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>

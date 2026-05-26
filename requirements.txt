@@ -1,0 +1,21 @@
+flask
+flask-socketio
+requests
+python-socketio
+matplotlib
+
+# Blockchain Transaction Processing System
+# NFC Institute of Engineering and Technology
+# Course: Parallel and Distributed Computing
+
+# Core dependencies (all from Python standard library – no pip install needed)
+# hashlib      – SHA-256 hashing
+# multiprocessing – parallel mining workers
+# threading    – distributed node simulation
+# socket       – P2P networking (used in network_demo.py)
+# json         – block serialisation
+# time         – timestamps
+
+# Optional – only needed if you add Flask REST API
+# flask>=2.3.0
+# pymongo>=4.6.0   # if using MongoDB instead of JSON storage
