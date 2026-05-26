@@ -2,7 +2,7 @@
 
 > A fully functional Python blockchain simulation featuring parallel Proof-of-Work mining, a distributed P2P node network, cryptographic wallets, and a real-time Flask web dashboard.
 >
-> **NFC Institute of Engineering and Technology** — Parallel and Distributed Computing
+> Topic — Parallel and Distributed Computing
 
 ---
 
@@ -27,6 +27,22 @@ This project implements a blockchain from scratch in Python, demonstrating core 
 
 - **CLI Simulation** (`main.py`) — a five-phase walkthrough of the complete transaction lifecycle
 - **Flask Web Dashboard** (`backend/app.py`) — a real-time browser UI with WebSocket updates
+
+---
+Screenshots
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b188223c-0506-49e5-a100-72c308a13cac" width="420" hspace="10"/>
+
+  <img src="https://github.com/user-attachments/assets/39e4af1f-3c40-40e0-bf17-277319ada9f4" width="420" hspace="10"/>
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/128f207d-3ea8-47f1-8df5-b147e540fa3c" width="420" hspace="10"/>
+
+  <img src="https://github.com/user-attachments/assets/3c4ea516-7ec6-49f8-9690-f104532ea94f" width="420" hspace="10"/>
+</p>
 
 ---
 
